@@ -1,0 +1,8 @@
+void main(){
+ int numero=1 ;
+   if(numero %2 == 0){
+     print("0 numero é PAR"); 
+  } else {
+  print(numero);
+     }
+}
