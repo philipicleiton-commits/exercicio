@@ -1,0 +1,21 @@
+void main() {
+  int contarVogais(String palavra) {
+    int contador = 0;
+    String vogais = "aeiouAEIOU";
+
+    for (int i = 0; i < palavra.length; i++) {
+      if (vogais.contains(palavra[i])) {
+        contador++;
+      }
+    }
+
+    return contador;
+  }
+
+  // exemplo
+  String texto = "programacao";
+
+  int resultado = contarVogais(texto);
+
+  print("Quantidade de vogais: $resultado");
+}
