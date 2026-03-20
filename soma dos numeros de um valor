@@ -1,0 +1,18 @@
+void main() {
+  int fatorial(int n) {
+    int resultado = 1;
+
+    for (int i = 1; i <= n; i++) {
+      resultado *= i;
+    }
+
+    return resultado;
+  }
+
+  // exemplo
+  int numero = 5;
+
+  int resultado = fatorial(numero);
+
+  print("$numero! = $resultado");
+}
