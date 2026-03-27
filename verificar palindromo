@@ -1,0 +1,8 @@
+void main() {
+  print(ehPalindromo("arara"));
+}
+
+bool ehPalindromo(String palavra) {
+  String invertida = palavra.split('').reversed.join('');
+  return palavra == invertida;
+}
