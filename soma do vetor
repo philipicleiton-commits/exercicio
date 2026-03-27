@@ -1,0 +1,14 @@
+void main() {
+  List<int> numeros = [2, 4, 6, 8, 10];
+  print(somarLista(numeros));
+}
+
+int somarLista(List<int> lista) {
+  int soma = 0;
+
+  for (var n in lista) {
+    soma += n;
+  }
+
+  return soma;
+}
