@@ -1,0 +1,44 @@
+void main() {
+  List<String> nomes = [
+    "Ana",
+    "Carlos",
+    "João",
+    "Maria",
+    "Pedro"
+  ];
+
+  List<double> nota1 = [7, 5, 8, 9, 6];
+  List<double> nota2 = [8, 6, 7, 10, 5];
+
+  List<double> medias = [];
+
+  int aprovados = 0;
+  int reprovados = 0;
+
+  for (int i = 0; i < nomes.length; i++) {
+    double media = calcularMedia(nota1[i], nota2[i]);
+    medias.add(media);
+
+    String situacao = media >= 7 ? "Aprovado" : "Reprovado";
+
+    if (media >= 7) {
+      aprovados++;
+    } else {
+      reprovados++;
+    }
+
+    print("${nomes[i]} - Média: $media - $situacao");
+  }
+
+  double maior = medias.reduce((a, b) => a > b ? a : b);
+  double menor = medias.reduce((a, b) => a < b ? a : b);
+
+  print("\nMaior média: $maior");
+  print("Menor média: $menor");
+  print("Aprovados: $aprovados");
+  print("Reprovados: $reprovados");
+}
+
+double calcularMedia(double n1, double n2) {
+  return (n1 + n2) / 2;
+}
