@@ -1,0 +1,25 @@
+void main() {
+  int opcao = 1;
+  double a = 10;
+  double b = 5;
+
+  switch (opcao) {
+    case 1:
+      print(somar(a, b));
+      break;
+    case 2:
+      print(subtrair(a, b));
+      break;
+    case 3:
+      print(multiplicar(a, b));
+      break;
+    case 4:
+      print(dividir(a, b));
+      break;
+  }
+}
+
+double somar(double a, double b) => a + b;
+double subtrair(double a, double b) => a - b;
+double multiplicar(double a, double b) => a * b;
+double dividir(double a, double b) => a / b;
