@@ -1,0 +1,9 @@
+void main() {
+  tabuada(5);
+}
+
+void tabuada(int numero) {
+  for (int i = 1; i <= 10; i++) {
+    print("$numero x $i = ${numero * i}");
+  }
+}
