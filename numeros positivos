@@ -1,0 +1,14 @@
+void main() {
+  List<int> numeros = [-2, 5, 0, 8, -1, 7];
+  print(contarPositivos(numeros));
+}
+
+int contarPositivos(List<int> lista) {
+  int contador = 0;
+
+  for (var n in lista) {
+    if (n > 0) contador++;
+  }
+
+  return contador;
+}
